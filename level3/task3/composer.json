@@ -1,0 +1,15 @@
+{
+    "name": "mezencev_e_qschool/task3",
+    "autoload": {
+        "psr-4": {
+            "MezencevEQschool\\Level3\\Task3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Мезенцев Евгений",
+            "email": "mezencev_e_qschool@qsoft.ru"
+        }
+    ],
+    "require": {}
+}

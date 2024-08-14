@@ -1,0 +1,118 @@
+-- create table if not exists categories(
+--     'id' INTEGER NOT NULL PRIMARY KEY,
+--     'name' VARCHAR(255) NOT NULL
+-- );
+--
+-- insert into categories values (1, 'Седан');
+-- insert into categories values (2, 'Кроссовер');
+--
+--
+-- create table if not exists cars(
+--     'id' INTEGER PRIMARY KEY NOT NULL,
+--     'name' VARCHAR(255) NOT NULL,
+--     'price' INTEGER NOT NULL,
+--     'old_price' INTEGER NULL,
+--     'image' VARCHAR(255) NULL,
+--     'category_id' INTEGER NOT NULL,
+--     'is_published' INTEGER NOT NULL,
+--     FOREIGN KEY ('category_id') REFERENCES 'cars' ('id') ON DELETE CASCADE
+-- );
+--
+-- insert into cars values (1, 'Seed', 1394900, 1394901, '/assets/pictures/car_ceed.png', 1, true);
+-- insert into cars values (2, 'Cerato', 1221900, 1821900, '/assets/pictures/car_cerato.png', 1, true);
+-- insert into cars values (3, 'K5', 1577900, null, '/assets/pictures/car_K5-half.png', 1, true);
+-- insert into cars values (4, 'K900', 4064900, null, '/assets/pictures/car_k900.png', 1, true);
+-- insert into cars values (5, 'Mohave', 3549900 , null, '/assets/pictures/car_mohave_new.png', 1, true);
+-- insert into cars values (6, 'Stinger', 2409900, null, '/assets/pictures/car_new_stinger.png', 1, true);
+-- insert into cars values (7, 'Rio X', 969900, null, '/assets/pictures/car_rio-x.png', 1, true);
+-- insert into cars values (8, 'Rio', 849900, null, '/assets/pictures/car_rio_new.png', 2, true);
+-- insert into cars values (9, 'Seltos', 1224900, null, '/assets/pictures/car_seltos.png', 2, true);
+-- insert into cars values (10, 'Sorento', 2219900, null, '/assets/pictures/car_sorento_new.png', 2, true);
+-- insert into cars values (11, 'Soul', 1094900, null, '/assets/pictures/car_soul.png', 2, true);
+-- insert into cars values (12, 'Sportage', 1644900, null, '/assets/pictures/car_sportage.png', 2, true);
+-- insert into cars values (13, 'XSeed', 1714900, null, '/assets/pictures/car_xceed.png', 2, true);
+--
+-- create table if not exists colors(
+--     'id' INT NOT NULL PRIMARY KEY,
+--     'name' VARCHAR(255) NOT NULL
+-- );
+--
+-- create table if not exists car_color(
+--     'car_id' INT NOT NULL,
+--     'color_id' INT NOT NULL,
+--     FOREIGN KEY ('car_id') REFERENCES 'cars' ('id') ON DELETE CASCADE,
+--     FOREIGN KEY ('color_id') REFERENCES 'colors' ('id') ON DELETE CASCADE
+-- );
+--
+-- insert into colors values (1, 'красный');
+-- insert into colors values (2, 'синий');
+-- insert into colors values (3, 'зеленый');
+-- insert into colors values (4, 'черный');
+-- insert into colors values (5, 'белый');
+--
+-- insert into car_color values (1, 1);
+-- insert into car_color values (1, 2);
+-- insert into car_color values (1, 3);
+-- insert into car_color values (1, 4);
+-- insert into car_color values (1, 5);
+--
+-- insert into car_color values (2, 1);
+-- insert into car_color values (2, 2);
+-- insert into car_color values (2, 3);
+-- insert into car_color values (2, 5);
+--
+-- insert into car_color values (3, 2);
+-- insert into car_color values (3, 3);
+-- insert into car_color values (3, 4);
+-- insert into car_color values (3, 5);
+--
+-- insert into car_color values (4, 1);
+-- insert into car_color values (4, 2);
+-- insert into car_color values (4, 5);
+--
+-- insert into car_color values (5, 1);
+-- insert into car_color values (5, 2);
+-- insert into car_color values (5, 3);
+-- insert into car_color values (5, 5);
+--
+-- insert into car_color values (6, 1);
+-- insert into car_color values (6, 2);
+-- insert into car_color values (6, 3);
+-- insert into car_color values (6, 4);
+--
+-- insert into car_color values (7, 1);
+-- insert into car_color values (7, 2);
+-- insert into car_color values (7, 3);
+-- insert into car_color values (7, 4);
+-- insert into car_color values (7, 5);
+--
+-- insert into car_color values (8, 2);
+-- insert into car_color values (8, 3);
+-- insert into car_color values (8, 4);
+-- insert into car_color values (8, 5);
+--
+-- insert into car_color values (9, 1);
+-- insert into car_color values (9, 2);
+-- insert into car_color values (9, 3);
+-- insert into car_color values (9, 4);
+-- insert into car_color values (9, 5);
+--
+-- insert into car_color values (10, 1);
+-- insert into car_color values (10, 2);
+-- insert into car_color values (10, 3);
+-- insert into car_color values (10, 4);
+-- insert into car_color values (10, 5);
+--
+-- insert into car_color values (11, 3);
+-- insert into car_color values (11, 4);
+-- insert into car_color values (11, 5);
+--
+-- insert into car_color values (12, 1);
+-- insert into car_color values (12, 2);
+-- insert into car_color values (12, 3);
+-- insert into car_color values (12, 4);
+-- insert into car_color values (12, 5);
+--
+-- insert into car_color values (13, 2);
+-- insert into car_color values (13, 3);
+-- insert into car_color values (13, 4);
